@@ -1,19 +1,20 @@
-package org.sylla.custumerservice;
+package org.sylla.customerservice;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.sylla.custumerservice.entities.Customer;
-import org.sylla.custumerservice.repositories.CustomerRepositories;
-
-import java.util.List;
+import org.sylla.customerservice.config.GlobalConfig;
+import org.sylla.customerservice.entities.Customer;
+import org.sylla.customerservice.repositories.CustomerRepositories;
 
 @SpringBootApplication
-public class CustumerServiceApplication {
+@EnableConfigurationProperties(GlobalConfig.class)
+public class CustomerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CustumerServiceApplication.class, args);
+        SpringApplication.run(CustomerServiceApplication.class, args);
     }
 
     @Bean

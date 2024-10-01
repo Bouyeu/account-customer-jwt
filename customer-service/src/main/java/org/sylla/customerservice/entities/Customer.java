@@ -1,4 +1,4 @@
-package org.sylla.custumerservice.entities;
+package org.sylla.customerservice.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

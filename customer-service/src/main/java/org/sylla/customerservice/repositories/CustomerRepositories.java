@@ -1,8 +1,8 @@
-package org.sylla.custumerservice.repositories;
+package org.sylla.customerservice.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import org.sylla.custumerservice.entities.Customer;
+import org.sylla.customerservice.entities.Customer;
 
 
 public interface CustomerRepositories extends JpaRepository<Customer,Long> {
