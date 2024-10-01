@@ -11,8 +11,8 @@
     <groupId>org.sylla</groupId>
     <artifactId>custumer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>custumer-service</name>
-    <description>custumer-service</description>
+    <name>customer-service</name>
+    <description>customer-service</description>
     <url/>
     <licenses>
         <license/>
