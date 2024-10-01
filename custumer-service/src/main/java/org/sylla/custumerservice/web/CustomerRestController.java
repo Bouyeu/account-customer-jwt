@@ -1,5 +1,6 @@
 package org.sylla.custumerservice.web;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,9 @@ public class CustomerRestController {
     public CustomerRestController(CustomerRepositories customerRepositories) {
         this.customerRepositories = customerRepositories;
     }
+
     @GetMapping("/Customers")
+
     public List<Customer> customerList(){
         return customerRepositories.findAll();
     }
@@ -25,4 +28,7 @@ public class CustomerRestController {
     public Customer customerById(@PathVariable Long id){
         return customerRepositories.findById(id).get();
     }
-}
+
+
+    }
+

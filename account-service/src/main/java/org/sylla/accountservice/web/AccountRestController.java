@@ -12,8 +12,8 @@ import java.util.List;
 
 @RestController
 public class AccountRestController {
-    private BankAccountRepository accountRepository;
-    private CustomerRestClient customerRestClient;
+    private final BankAccountRepository accountRepository;
+    private final CustomerRestClient customerRestClient;
 
     public AccountRestController(BankAccountRepository bankAccountRepository, CustomerRestClient customerRestClient ){
         this.accountRepository = bankAccountRepository;
